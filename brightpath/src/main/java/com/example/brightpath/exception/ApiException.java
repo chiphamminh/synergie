@@ -1,4 +1,4 @@
-package com.example.synergie.exception;
+package com.example.brightpath.exception;
 
 import org.springframework.http.HttpStatus;
 

@@ -1,10 +1,10 @@
-package com.example.synergie.controller;
+package com.example.brightpath.controller;
 
-import com.example.synergie.dto.BookingRequest;
-import com.example.synergie.dto.BookingUpdateRequest;
-import com.example.synergie.entity.Booking;
-import com.example.synergie.entity.BookingChange;
-import com.example.synergie.service.BookingService;
+import com.example.brightpath.dto.BookingRequest;
+import com.example.brightpath.dto.BookingUpdateRequest;
+import com.example.brightpath.entity.Booking;
+import com.example.brightpath.entity.BookingChange;
+import com.example.brightpath.service.BookingService;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;

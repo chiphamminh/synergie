@@ -1,6 +1,6 @@
-package com.example.synergie.dto;
+package com.example.brightpath.dto;
 
-import com.example.synergie.enums.BookingType;
+import com.example.brightpath.enums.BookingType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

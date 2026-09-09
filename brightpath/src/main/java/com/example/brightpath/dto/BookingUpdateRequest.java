@@ -1,4 +1,4 @@
-package com.example.synergie.dto;
+package com.example.brightpath.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
