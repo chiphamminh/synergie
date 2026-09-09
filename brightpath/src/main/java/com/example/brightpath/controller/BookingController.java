@@ -2,6 +2,7 @@ package com.example.brightpath.controller;
 
 import com.example.brightpath.dto.BookingRequest;
 import com.example.brightpath.dto.BookingUpdateRequest;
+import com.example.brightpath.dto.ConflictReport;
 import com.example.brightpath.entity.Booking;
 import com.example.brightpath.entity.BookingChange;
 import com.example.brightpath.service.BookingService;
@@ -38,4 +39,10 @@ public class BookingController {
 
     @GetMapping("/{id}/changes")
     public List<BookingChange> changes(@PathVariable Long id) { return service.changes(id); }
+
+    @GetMapping("/conflicts")
+    public List<ConflictReport> conflicts(
+            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
+        return service.detectConflicts(date);
+    }
 }

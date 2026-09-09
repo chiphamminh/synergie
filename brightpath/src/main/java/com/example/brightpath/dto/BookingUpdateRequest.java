@@ -14,4 +14,5 @@ public class BookingUpdateRequest {
     private LocalTime startTime;
     private Integer durationMin;
     private String roomId;
+    private Boolean override;
 }

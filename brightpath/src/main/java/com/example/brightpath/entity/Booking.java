@@ -27,7 +27,7 @@ public class Booking {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "lesson_id", nullable = false, length = 30)
+    @Column(name = "lesson_id", nullable = false, length = 50)
     private String lessonId;
 
     @Column(nullable = false)
