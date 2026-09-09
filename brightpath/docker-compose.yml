@@ -1,0 +1,15 @@
+services:
+  mysql:
+    image: mysql:8
+    container_name: brightpath-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: brightpath
+      MYSQL_DATABASE: brightpath
+    ports:
+      - "3306:3306"
+    volumes:
+      - brightpath_mysql_data:/var/lib/mysql
+
+volumes:
+  brightpath_mysql_data:
